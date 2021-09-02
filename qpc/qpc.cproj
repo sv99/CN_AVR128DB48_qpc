@@ -1,0 +1,249 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>7.0</ProjectVersion>
+    <ToolchainName>com.Atmel.AVRGCC8.C</ToolchainName>
+    <ProjectGuid>dce6c7e3-ee26-4d79-826b-08594b9ad897</ProjectGuid>
+    <avrdevice>AVR128DB48</avrdevice>
+    <avrdeviceseries>none</avrdeviceseries>
+    <OutputType>StaticLibrary</OutputType>
+    <Language>C</Language>
+    <OutputFileName>lib$(MSBuildProjectName)</OutputFileName>
+    <OutputFileExtension>.a</OutputFileExtension>
+    <OutputDirectory>$(MSBuildProjectDirectory)\$(Configuration)</OutputDirectory>
+    <AvrGccProjectExtensions>
+    </AvrGccProjectExtensions>
+    <AssemblyName>qpc</AssemblyName>
+    <Name>qpc</Name>
+    <RootNamespace>qpc</RootNamespace>
+    <ToolchainFlavour>Native</ToolchainFlavour>
+    <KeepTimersRunning>true</KeepTimersRunning>
+    <OverrideVtor>false</OverrideVtor>
+    <CacheFlash>true</CacheFlash>
+    <ProgFlashFromRam>true</ProgFlashFromRam>
+    <RamSnippetAddress>0x20000000</RamSnippetAddress>
+    <UncachedRange />
+    <preserveEEPROM>true</preserveEEPROM>
+    <OverrideVtorValue>exception_table</OverrideVtorValue>
+    <BootSegment>2</BootSegment>
+    <ResetRule>0</ResetRule>
+    <eraseonlaunchrule>0</eraseonlaunchrule>
+    <EraseKey />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=avr128db48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\gcc\dev\avr128db48"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>NDEBUG</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\include\</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\include\</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <ToolchainSettings>
+      <AvrGcc>
+  <avrgcc.common.Device>-mmcu=avr128db48 -B "%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\gcc\dev\avr128db48"</avrgcc.common.Device>
+  <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
+  <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
+  <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
+  <avrgcc.common.outputfiles.srec>True</avrgcc.common.outputfiles.srec>
+  <avrgcc.common.outputfiles.usersignatures>False</avrgcc.common.outputfiles.usersignatures>
+  <avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>True</avrgcc.compiler.general.ChangeDefaultCharTypeUnsigned>
+  <avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>True</avrgcc.compiler.general.ChangeDefaultBitFieldUnsigned>
+  <avrgcc.compiler.symbols.DefSymbols>
+    <ListValues>
+      <Value>DEBUG</Value>
+    </ListValues>
+  </avrgcc.compiler.symbols.DefSymbols>
+  <avrgcc.compiler.directories.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\include\</Value>
+      <Value>../include</Value>
+      <Value>../src</Value>
+    </ListValues>
+  </avrgcc.compiler.directories.IncludePaths>
+  <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
+  <avrgcc.compiler.optimization.PackStructureMembers>True</avrgcc.compiler.optimization.PackStructureMembers>
+  <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
+  <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
+  <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
+  <avrgcc.linker.libraries.Libraries>
+    <ListValues>
+      <Value>libm</Value>
+    </ListValues>
+  </avrgcc.linker.libraries.Libraries>
+  <avrgcc.assembler.general.IncludePaths>
+    <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\AVR-Dx_DFP\1.9.103\include\</Value>
+    </ListValues>
+  </avrgcc.assembler.general.IncludePaths>
+  <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
+</AvrGcc>
+    </ToolchainSettings>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="include\qassert.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qep.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qep_port.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qequeue.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qf.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qf_port.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qk.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qmpool.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qpc.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qpset.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qs.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qstamp.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qstamp.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qs_dummy.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qs_port.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\quit.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qv.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qv_port.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qxk.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="include\qxthread.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="library.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qep_hsm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qep_msm.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_act.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_actq.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_defer.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_dyn.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_mem.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_ps.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_qact.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_qeq.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_qmact.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf\qf_time.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qf_pkg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qs\qs.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qs\qs_fp.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qs\qs_rx.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qs\qutest.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qs_pkg.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="src\qv\qv.c">
+      <SubType>compile</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="include\" />
+    <Folder Include="src\" />
+    <Folder Include="src\qf\" />
+    <Folder Include="src\qs\" />
+    <Folder Include="src\qv\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.md">
+      <SubType>compile</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(AVRSTUDIO_EXE_PATH)\\Vs\\Compiler.targets" />
+</Project>
