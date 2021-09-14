@@ -15,8 +15,8 @@ int main(void)
 {
     static QEvt const* blinky_queueSto[10]; /* event queue buffer for Blinky */
 
-    QF_init();       /* initialize the framework */
-    BSP_initSetup(); /* initialize the BSP */
+    QF_init();  /* initialize the framework */
+    BSP_init(); /* initialize the BSP */
 
     /* instantiate and start the Blinky active object */
     Blinky_ctor();                        /* in C you must explicitly call the Blinky constructor */
