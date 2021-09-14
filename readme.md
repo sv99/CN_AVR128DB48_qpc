@@ -42,7 +42,7 @@ dpp
 
 ![bb](dpp_cn_128db48_bb.png)
 
-philo out leds PC0-PC4, Spy output UART4 PE0, PE1
+Philo out leds PC0-PC4, Spy output UART4 PE0, PE1
 
 Spy configuration
 -----------------
@@ -65,6 +65,14 @@ Has simultaneous errors when working from internal clock! Need external quartz.
 ```bash
 qspy -c COM4 -b 19200 -T 4 -O 2 -F 2 -S 1 -E 1 -Q 1 -P 1 -B 1 -C 2
 ```
+```bash
+Debug config:
+Program Memory Usage 	:	7318 bytes   5,6 % Full
+Data Memory Usage 		:	659 bytes   4,0 % Full
 
+Spy config:
+Program Memory Usage 	:	19536 bytes   14,9 % Full
+Data Memory Usage 		:	3344 bytes   20,4 % Full
+```
 
   
