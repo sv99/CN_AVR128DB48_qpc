@@ -62,6 +62,9 @@ Has simultaneous errors when working from internal clock! Need external quartz.
 * B 1 - block size
 * C 2 - time event counter size (default value)
 
+```bash
+qspy -c COM4 -b 19200 -T 4 -O 2 -F 2 -S 1 -E 1 -Q 1 -P 1 -B 1 -C 2
+```
 
 
   
